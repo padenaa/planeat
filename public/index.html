@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planeat</title>
+  <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+  <section class="hero is-small is-success has-text-centered">
+    <div class="hero-body">
+      <h1 class="title is-1">
+        Planeat
+      </h1>
+      <!--add logo or make it pretty later-->
+      <p class="subtitle">
+        Protect the planeat <3
+      </p>
+    </div>
+  </section>
+  <div class="container">
+    <section class="section ">
+      <h1 class="title is-4 has-text-centered">Search for recipes with ingredients that are in-season and within your area</h1>
+    </section>
+
+    <div class = "columns">
+      <div class="column is-one-fifth">
+
+      </div>
+      <div class="column "> <!--column for prompts-->
+        <br>
+    
+        <h2 class="subtitle">
+        What geographic area do you fall in?
+        </h2>
+        <h2 class="subtitle is-6">Click on the image to select</h2>
+        
+        <br>
+        <h2 class="subtitle">
+            What meal will you be having?
+        </h2>
+        
+        
+
+        <div class="mt-4">
+            <button id="button1" class="button">Find me a recipe!</button>
+        </div>
+
+      </div>
+      
+      
+      <div class="column">
+        <img src = "globe.jpg" alt="map of north america">
+      </div>
+    </div>
+
+    
+    
+    
+  </div>
+  <script src="js/script.js" type="text/javascript" defer></script>
+</body>
+
+</html>
