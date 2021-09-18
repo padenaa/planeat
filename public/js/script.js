@@ -4,11 +4,25 @@ month = d.getMonth();
 
 
 function printMousePos(e) {
-    var cursorX = e.pageX;
-    var cursorY = e.pageY;
-    console.log(cursorX);
-    console.log(cursorY);
+    var cursorX = e.clientX;
+    var cursorY = e.clientY;
+    var el = document.getElementById("pin");
+    var country = 0;
+    if (cursorY < 390){
+        country = 1;
+        el.style.left = 0;
+    }else if (cursorY < 450){
+        country = 2;
+    } else {
+        country = 3;
+    }
+    
+    
+    el.style.top = cursorY;
+    el.style.left = cursorX;
+    return country;
 }
+
 const location1 = document.getElementById("location");
-location1.addEventListener('click', printMousePos);
+var country = location1.addEventListener('click', printMousePos);
 

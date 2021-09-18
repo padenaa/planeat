@@ -1,11 +1,11 @@
-    .crop {
-        width: 400px;
-        height: 400px;
-        overflow: hidden;
-    }
-
-    .crop img {
-        width: 400px;
-        height: 400px;
-        
-    }
+.containerdiv {
+  border: 0;
+  float: left;
+  position: relative;
+} 
+.cornerimage {
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+ }
