@@ -1,2 +1,2 @@
 # planeat
-Hack the North 2021 Project
+Hack The North 2021 Project
